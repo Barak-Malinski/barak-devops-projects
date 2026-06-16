@@ -28,7 +28,7 @@ jobs:
           context: ./lesson-cicd/githubaction  # Path to the Dockerfile and build context
           push: true
           tags: |
-            #dinghy123/app-node:${{ github.sha }}
-            dinghy123/app-node:latest-09
+            #barakm7/gitaction:${{ github.sha }}
+            barakm7/gitaction:latest-09
       - name: Logout from Docker Hub
         run: docker logout
