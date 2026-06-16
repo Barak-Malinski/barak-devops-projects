@@ -28,7 +28,6 @@ jobs:
           context: ./githubaction  # Path to the Dockerfile and build context
           push: true
           tags: |
-            #barakm7/gitaction:${{ github.sha }}
             barakm7/gitaction:latest
       - name: Logout from Docker Hub
         run: docker logout
