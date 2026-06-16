@@ -29,6 +29,6 @@ jobs:
           push: true
           tags: |
             #barakm7/gitaction:${{ github.sha }}
-            barakm7/gitaction:latest-09
+            barakm7/gitaction:latest
       - name: Logout from Docker Hub
         run: docker logout
