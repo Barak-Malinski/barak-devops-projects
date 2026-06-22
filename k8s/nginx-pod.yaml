@@ -7,6 +7,7 @@ metadata:
 spec:
   containers:
     - name: nginx
-      image: nginx:1.30
+      image: barakmalinski/node-app:latest
+      imagePullPolicy: Always
       ports:
         - containerPort: 80
