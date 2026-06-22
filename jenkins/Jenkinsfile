@@ -1,19 +1,11 @@
 //go to lesson of docker in order run images based on node
 pipeline {
-    agent any
-
-    stages {
-        stage('Pre Build') {
-            steps {
-                echo 'Install tools..'
-            }
+    agent {
+      docker { image 'node:24.17.0-alpine3.24' }
         }
-        stage('Build') {
-            steps {
-                echo 'Building..'
             }
-        }
-        stage('Test') {
+    stages{
+        stage ('Test') {
             steps {
                 echo 'Testing..'
             }
