@@ -10,4 +10,4 @@ spec:
       image: barakmalinski/node-app:latest
       imagePullPolicy: Always
       ports:
-        - containerPort: 80
+        - containerPort: 3000
