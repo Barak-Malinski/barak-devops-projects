@@ -4,7 +4,7 @@ pipeline {
       docker { image 'node:24.17.0-alpine3.24' }
         }
             }
-    stages{
+    stages {
         stage ('Test') {
             steps {
                 echo 'Testing..'
